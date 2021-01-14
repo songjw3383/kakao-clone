@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>transformations</title>
+    <style>
+      .box{
+        width: 500px;
+        height: 500px;
+        background: red;
+        animation: 5s scaleAndRotateSquare infinite ease-in-out;
+      }
+      @keyframes scaleAndRotateSquare {
+        0%{
+          transform: none;
+        }
+        50%{
+          transform: rotate(1turn) scale(.5, .5);
+          color: white;
+        }
+        100%{
+          transform: none;
+          color:blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">11</div>
+  </body>
+</html>
